@@ -1,0 +1,9 @@
+{
+  "name": "claude-code-dev-kit",
+  "version": "0.1.0",
+  "description": "Author Claude Code skills, hooks, subagents and plugins against the live code.claude.com docs instead of stale training data or bundled guides.",
+  "author": { "name": "KHA Entertainment" },
+  "repository": "https://github.com/KHAEntertainment/claude-code-dev-kit",
+  "license": "MIT",
+  "keywords": ["claude-code", "skills", "hooks", "subagents", "plugins", "authoring", "docs"]
+}
