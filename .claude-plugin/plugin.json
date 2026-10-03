@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-dev-kit",
+  "name": "authoring-kit",
   "version": "0.1.0",
   "description": "Author Claude Code skills, hooks, subagents and plugins against the live code.claude.com docs instead of stale training data or bundled guides.",
   "author": { "name": "KHA Entertainment" },

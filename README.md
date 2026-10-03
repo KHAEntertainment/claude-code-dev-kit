@@ -1,4 +1,4 @@
-# claude-code-dev-kit
+# authoring-kit
 
 Skills for building Claude Code extensions against the **live** docs at
 [code.claude.com](https://code.claude.com/docs), not stale training data or
@@ -20,13 +20,13 @@ cache of the facts you need most.
 As a plugin (once listed in `kha-marketplace`):
 
 ```bash
-claude plugin install claude-code-dev-kit@kha-marketplace
+claude plugin install authoring-kit@kha-marketplace
 ```
 
 Try it from a local checkout without installing:
 
 ```bash
-claude --plugin-dir ./claude-code-dev-kit
+claude --plugin-dir .
 ```
 
 Or copy just the skill into your personal skills:
@@ -34,6 +34,14 @@ Or copy just the skill into your personal skills:
 ```bash
 cp -R skills/claude-code-authoring ~/.claude/skills/
 ```
+
+## Name change
+
+This plugin was previously named `claude-code-dev-kit`. That name is on
+Anthropic's reserved list — any plugin name starting with `claude-` is rejected
+by `claude plugin validate` — so the catalog entry could never be installed. It
+is now `authoring-kit`. The repository URL is unchanged, and the shipped skill
+is still named `claude-code-authoring`.
 
 ## Keeping it current
 
