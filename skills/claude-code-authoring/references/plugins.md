@@ -13,7 +13,7 @@ my-plugin/
 ├── agents/*.md                  # subfolders allowed
 ├── workflows/*.js
 ├── output-styles/*.md
-├── hooks/hooks.json
+├── hooks/hooks.json             # settings hooks; a "modules" key makes it a mod (mods.md)
 ├── .mcp.json
 ├── .lsp.json
 ├── bin/                         # added to PATH
@@ -33,6 +33,7 @@ reference files outside their root.
   {name, email, url}, `homepage`, `repository`, `license`, `keywords`,
   `metadata`, `defaultEnabled`.
 - **Component paths:** `skills`, `commands`, `agents`, `workflows`, `hooks`,
+  `types` (mods: `$.state` / API-namespace declarations),
   `mcpServers`, `outputStyles`, `lspServers`, `experimental.themes`,
   `experimental.monitors`, `experimental.evals`.
 - **Configuration:** `userConfig` (prompted at enable; exposed as
@@ -57,6 +58,7 @@ claude plugin validate ./my-plugin --strict                # manifest/structure
 claude --plugin-dir ./my-plugin                            # load for one session
 claude plugin eval init                                    # scaffold eval suite
 claude plugin eval ./my-plugin                             # run vs no-plugin baseline
+claude plugin test ./my-mod                                # mods: run *.test.ts (see mods.md)
 claude plugin install|enable|disable|update|uninstall <plugin>[@marketplace]
 ```
 

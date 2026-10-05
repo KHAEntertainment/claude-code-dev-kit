@@ -13,7 +13,12 @@ cache of the facts you need most.
 
 | Skill | What it does |
 |---|---|
-| `claude-code-authoring` | Workflow + dated quick references for skills, hooks, subagents and plugins. Fetches raw doc pages (`scripts/fetch_doc.sh`) so field names and enum values are exact. |
+| `claude-code-authoring` | Workflow + dated quick references for skills, hooks, subagents, plugins and mods. Fetches raw doc pages (`scripts/fetch_doc.sh`) so field names and enum values are exact. |
+
+Mods are plugins that run JS/TS hooks inside Claude Code and can draw panes,
+add commands, or rewrite tool calls. They need Claude Code v2.1.287 or later. Mod
+guidance lives in `references/mods.md`, which also covers the generated `.d.ts`
+types, `claude plugin validate` and `claude plugin test`.
 
 ## Install
 

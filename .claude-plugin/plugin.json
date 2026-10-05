@@ -1,9 +1,9 @@
 {
   "name": "authoring-kit",
-  "version": "0.1.0",
-  "description": "Author Claude Code skills, hooks, subagents and plugins against the live code.claude.com docs instead of stale training data or bundled guides.",
+  "version": "0.2.0",
+  "description": "Author Claude Code skills, hooks, subagents, plugins and mods against the live code.claude.com docs instead of stale training data or bundled guides.",
   "author": { "name": "KHA Entertainment" },
   "repository": "https://github.com/KHAEntertainment/claude-code-dev-kit",
   "license": "MIT",
-  "keywords": ["claude-code", "skills", "hooks", "subagents", "plugins", "authoring", "docs"]
+  "keywords": ["claude-code", "skills", "hooks", "subagents", "plugins", "mods", "authoring", "docs"]
 }
